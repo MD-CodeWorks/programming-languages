@@ -5,13 +5,18 @@ This repository contains my personal solutions, practice exercises, and logic bu
 ---
 
 ## 🛠️ Languages & Environment
-* **Primary Languages:** Python 🐍 | C++ ⚡
+* **Primary Languages:** JavaScript 🟨 | Python 🐍 | C++ ⚡
 * **Editor:** VS Code
 * **OS:** Linux / Windows
 
 ---
 
 ## 📂 Repository Contents
+
+* **JavaScript:**
+  * Fundamental concepts & core syntax practice
+  * Problem-solving & logic building tasks
+  * Interactive exercises & practice files
 
 * **Python:** 
   * Basic control structures & loops (Pattern printing, prime checks, etc.)
