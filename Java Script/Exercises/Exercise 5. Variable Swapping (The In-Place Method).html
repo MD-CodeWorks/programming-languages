@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5: Variable Swapping</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f7f6;
+            color: #333;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            border-left: 5px solid #f7df1e;
+        }
+        .header-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        h2 {
+            margin-top: 0;
+            color: #222;
+        }
+        .badge {
+            background-color: #f7df1e;
+            color: #000;
+            padding: 4px 8px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+        .section-title {
+            font-weight: bold;
+            color: #444;
+            margin-top: 15px;
+        }
+        pre {
+            background-color: #282c34;
+            color: #abb2bf;
+            padding: 15px;
+            border-radius: 6px;
+            font-family: 'Courier New', Courier, monospace;
+            overflow-x: auto;
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="header-meta">
+            <span><strong>Date:</strong> 2026-08-05</span>
+            <span><strong>Time:</strong> 10:00 PM</span>
+        </div>
+
+        <h2>Exercise 5. Variable Swapping <span class="badge">In-Place Method</span></h2>
+        
+        <p><strong>Practice Problem:</strong> Write a program to swap the values of two variables, <code>a</code> and <code>b</code>, without using a third temporary variable.</p>
+        
+        <p><strong>Exercise Purpose:</strong> This exercise will help you learn about memory efficiency and JavaScript’s modern <strong>Array Destructuring Assignment</strong> feature. In older approaches or traditional languages, you often need a temporary variable to swap values safely. In JavaScript (ES6+), you can swap values in one line cleanly using array destructuring syntax, or using arithmetic operations.</p>
+        
+        <div class="section-title">Given Input:</div>
+        <pre><code>let a = 5;
+let b = 10;</code></pre>
+        
+        <div class="section-title">Expected Output:</div>
+        <pre><code>Before Swap: a = 5, b = 10
+After Swap: a = 10, b = 5</code></pre>
+    </div>
+
+    <script src="Exercise 5. Variable Swapping (The In-Place Method).js"></script>
+
+</body>
+</html>
