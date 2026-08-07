@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice Card</title>
+    <style>
+        :root {
+            --bg-color: #f1f5f9;
+            --card-bg: #ffffff;
+            --text-color: #0f172a;
+            --text-muted: #64748b;
+            --accent-color: #f7df1e;
+            --accent-text: #000000;
+            --border-color: #e2e8f0;
+            --code-bg: #f8fafc;
+            --code-text: #0284c7;
+            --purpose-bg: #f8fafc;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            width: 100%;
+            max-width: 650px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+
+        .card-header {
+            background-color: #fafafa;
+            padding: 20px 24px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .badge {
+            background-color: var(--accent-color);
+            color: var(--accent-text);
+            font-weight: 700;
+            font-size: 0.85rem;
+            padding: 4px 10px;
+            border-radius: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .meta-info {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-family: monospace;
+        }
+
+        .card-body {
+            padding: 24px;
+        }
+
+        .exercise-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: var(--text-color);
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+            font-weight: 700;
+        }
+
+        .problem-statement {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #334155;
+        }
+
+        .purpose-box {
+            background-color: var(--purpose-bg);
+            border-left: 4px solid var(--accent-color);
+            border-top: 1px solid var(--border-color);
+            border-right: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 12px 16px;
+            border-radius: 0 8px 8px 0;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #334155;
+        }
+
+        .data-box {
+            background-color: var(--code-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 12px 16px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.95rem;
+            color: var(--code-text);
+            overflow-x: auto;
+            font-weight: 600;
+        }
+
+        .note {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 15px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="card-header">
+            <span class="badge">JavaScript</span>
+            <div class="meta-info">
+                <span>Aug-07-2026</span> | <span>06:30 PM</span>
+            </div>
+        </div>
+
+        <div class="card-body">
+            <h1 class="exercise-title">Exercise 7. Array Manipulation: Add and Remove</h1>
+
+            <div class="section">
+                <div class="section-label">Practice Problem</div>
+                <p class="problem-statement">
+                    Create an array of 5 fruits. Add a new fruit (<code>"fig"</code>) to the end of the array, then remove the second fruit (at index 1).
+                </p>
+            </div>
+
+            <div class="section">
+                <div class="section-label">Exercise Purpose</div>
+                <div class="purpose-box">
+                    This exercise teaches <strong>“Dynamic Collection Management.”</strong> In JavaScript, arrays serve the role of ordered lists. Arrays are rarely static; being able to modify, expand, and prune them is essential for handling data like shopping carts, user lists, or inventory systems.
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-label">Given Input</div>
+                <div class="data-box">
+                    let fruits = ["apple", "banana", "cherry", "date", "elderberry"];
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-label">Expected Output</div>
+                <div class="data-box" style="color: #16a34a;">
+                    ["apple", "cherry", "date", "elderberry", "fig"]
+                </div>
+            </div>
+
+            <p class="note">* Note: JavaScript handles ordered lists using <strong>Arrays</strong>.</p>
+        </div>
+    </div>
+<script src="Exercise 7. Array Manipulation: Add and Remove.js"></script>
+</body>
+</html>
