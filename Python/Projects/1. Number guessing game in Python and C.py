@@ -9,12 +9,22 @@
 """
 
 import random
+import math
 
-start = int(input("Enter starting number: "))
-end = int (input("Enter ending num: "))
+while(True):
+    start = int(input("Enter starting number: "))
+    end = int (input("Enter ending num: "))
+    if start < end:
+        break
+    else:
+        print()
+
+
+
+range_size = end - start + 1
 
 num = random.randint(start, end)
-ch = 7
+ch = math.ceil(math.log2(range_size))
 attempt = 0
 
 print(f"----- You have only {ch} chances -----")
