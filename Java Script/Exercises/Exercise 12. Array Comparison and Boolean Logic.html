@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 12. List Comparison and Boolean Logic</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8fafc;
+            color: #0f172a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            width: 100%;
+            max-width: 650px;
+            padding: 32px;
+            border-left: 6px solid #eab308;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            gap: 16px;
+        }
+
+        .title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #1e293b;
+            line-height: 1.4;
+        }
+
+        .badge {
+            background-color: #fef9c3;
+            color: #a16207;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 20px;
+            white-space: nowrap;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #64748b;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .text {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #334155;
+        }
+
+        .code-block {
+            background-color: #f1f5f9;
+            border-radius: 6px;
+            padding: 12px 16px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 0.9rem;
+            color: #0f172a;
+            margin-top: 6px;
+            display: block;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="card-header">
+            <h1 class="title">Exercise 12. Array Comparison and Boolean Logic</h1>
+            <span class="badge">Aug-12-2026 | 10:23 AM</span>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Practice Problem</h2>
+            <p class="text">Write a function to return true if the first and last number of a given array is the same. If the numbers are different, return false.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Exercise Purpose</h2>
+            <p class="text">This exercise introduces “Collection Indexing” and “Boolean Flags.” Comparing data structure boundaries is common in pattern matching and data integrity checks.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Given Input</h2>
+            <span class="code-block">const numbers_x = [10, 20, 30, 40, 10];
+const numbers_y = [75, 65, 35, 75, 30];</span>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Expected Output</h2>
+            <span class="code-block">Given array: [75, 65, 35, 75, 30] | result is false
+Given array: [10, 20, 30, 40, 10] | result is true</span>
+        </div>
+    </div>
+
+    <script src="Exercise 12. Array Comparison and Boolean Logic.js"></script>
+</body>
+</html>
