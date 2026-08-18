@@ -15,6 +15,12 @@
 List_A = ["Physics", "Chemistry"]
 List_B = ["Maths", "Biology"]
 
+# Method 1
+print("Mehtod 1")
 Combined_List = List_A + List_B
-
 print(f"Combined List: {Combined_List}")
+
+# Method 2
+print("Method 2")
+List_A.extend(List_B)
+print(f"Combined List: {List_A}")
