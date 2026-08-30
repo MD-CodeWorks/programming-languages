@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods in Js</title>
+</head>
+<body>
+    <h1>String Methods in JS</h1>
+    <p>String methods means functions</p>
+    <ol>
+        <li>.toUpperCase()</li>
+        <li>.tolowerCase()</li>
+        <li>.trim()</li>
+        <li>.Slice(start, end?)</li> <!-- returns part of string -->
+        <li>.concat(str2)</li> <!-- joins str2 with str1-->
+        <li>.replace(searchVal,newVal)</li>
+        <li>.charAt(idx)</li>
+    </ol>
+    <script>
+        // Use of (Variable Name.UpperCase())
+        let str = "Muhammad Dilawar";
+        UpperCase = str.toUpperCase();
+        console.log(UpperCase);
+        
+        // Use of (Variable Name.lowerCase())
+        let lowerCase = "M.Dilawar";
+        lowerCase = str.toLowerCase();
+        console.log(lowerCase);
+
+        // Use of trim (Variable Name.trim())
+        // (ya start or end wali space katam kar data ha between space katam nhi krta)
+        let newName = "          I am           Muhammad         Dilawar     ";
+        console.log(newName.trim());
+
+        // Use of (Variable Name.Slice(start, end?))
+        let slice = "Muhammad Dilawar";
+        console.log(slice.slice(4, 10));
+
+        // Use of (Variable 1.concat(Variable 2))
+        let firstName = "Muhammad";
+        let secondName = " Dilawar";
+        // Method one
+        let joinstring = "I am "  + firstName + secondName;
+        console.log(joinstring);
+        // Method tow
+        console.log(firstName.concat(secondName));
+
+        // Time: 
+        // Use of {Variable.replace(search Val, newVal)}
+        let name = "Muhammd Dilawar";
+        console.log(name.replace('mm','MM'));
+
+        // Time: 01:12:48
+        // Use of {Variable.charAt(idx)}
+        let find = "Muhammad Dilawar";
+        console.log(find.charAt(5));
+    </script>
+</body>
+</html>

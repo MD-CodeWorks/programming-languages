@@ -1,0 +1,48 @@
+<!-- Date: 16-Jan-2026 -->
+<!-- video Time: 27:00 -->
+
+<!-- For a given array with prices of 5 items -> [250,645,300,900,500]
+ All items have an offer of 10% OFF on them. Change the array  to store final price after applying offer.-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L 4 - Q - 2</title>
+</head>
+
+<body>
+    <h1>L - 4, Q - 2</h1>
+    <p>For a given array with prices of 5 items -> [250,645,300,900,500]
+        All items have an offer of 10% OFF on them. Change the array to store final price after applying offer.</p>
+    
+    <script>
+        let items = [250, 645, 300, 900, 50];
+        console.log("Previews Values")
+        console.log(items);
+
+        // This use of (For of Loop)
+        let i = 0;
+        for (let val of items) {
+            console.log(`Value at index ${i} = ${val}`);
+            let offer = val / 10;
+            items[i] = items[i] - offer;
+            console.log(`value after offer = ${items[i]}`);
+            i++;
+        }
+        console.log("New Values")
+        console.log(items);
+
+
+        // Now We will use simple (For loop)
+        for (let i = 0; i < items.length; i++) {
+            let offer = items[i] / 10;
+            items[i] -= offer;
+        }
+        console.log(items);
+
+    </script>
+</body>
+
+</html>

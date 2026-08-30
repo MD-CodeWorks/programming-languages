@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Literals</title>
+</head>
+<body>
+    <p>Use of Template Literals</p>
+    <script>
+        // Use of Template Literals
+        let obj = {
+            item: "pen",
+            price: 10,
+        };
+        // Method one
+        let output = `the cost of ${obj.item} is ${obj.price} rupees`;
+        console.log(output);
+        // Method two
+        console.lgo("teh cost of", obj.item, "is", obj.price, "rupees");
+        
+        let specialString = `This is a template literal`;
+        console.log(typeof specialString);
+    </script>
+</body>
+</html>

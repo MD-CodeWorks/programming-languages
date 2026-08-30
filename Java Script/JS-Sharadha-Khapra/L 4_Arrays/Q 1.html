@@ -1,0 +1,30 @@
+<!-- Date: 16-Jan-2026 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L 4 - Question</title>
+</head>
+<body>
+    <!-- For a given array with marks of students -> [83,93,93,75,91]
+     Find the average marks of the entire class -->
+     <script>
+        let marks = [83,93,99,93,75,91];
+        console.log(marks.length);
+        let sum = 0;
+        // Normal life 😋
+        // sum = marks[0] + marks[1] + marks[2] + marks[3];
+
+        // Programmer life
+        for(let val of marks){
+            // console.log(marks);
+            sum = sum + val;
+        }
+        console.log(sum);
+        console.log(marks.length);
+        // let avg = sum / marks.length;
+        console.log("avg marks of the class", sum/marks.length);
+     </script>
+</body>
+</html>

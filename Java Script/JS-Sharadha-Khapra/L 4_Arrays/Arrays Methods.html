@@ -1,0 +1,127 @@
+<!-- Date: 17-Jan-2026 -->
+<!-- Watch Time: (ma kis time bhata video diak rha) 10:16 -->
+<!-- Video Time: 34:32 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays Methods</title>
+</head>
+<body>
+    <h1>Array Methods in JS</h1>
+    <ol>
+        <li>Push(): add to end</li>
+        <li>Pop(): delete from end & return</li>
+        <li>toString(): Converts array to string</li>
+        <li>Concat(): joins multiple arrays & returns result</li>
+        <li>unshift(): add to Start</li>
+        <li>shift: delete from start & return</li>
+        <li>slice(): returns a piece of the array</li>
+        <p>slice(startidx, endidx)</p>
+        <li>splice(): change original array (add, remove, replace)</li>
+        <p>splice(startidx, delcount, newEl1...)</p>
+    </ol>
+
+    <script>
+        console.log("jitna b method han sab small letters start hota han");
+        
+        // 1
+        // Use of [.push()]
+        // is method sa hum array ma value add krta han
+        // Push methods array ka end ma value add kar data ha or previews array ma value add karta ha
+        let foodItems = ["potato", "apple", "litchi", "tomato"];
+        console.log(foodItems); //Now array length is 4
+        console.log(".push() method add value in arrays");
+        foodItems.push("Chips");  // one items add in array & arrays length is 5
+        console.log(foodItems);
+        foodItems.push("burger", "paneer"); // Multiple items add in array & array length is 7
+        console.log(foodItems);
+        
+        // 2
+        // Use of [.pop()]
+        // is method sa array sa value delete krta han
+        console.log(".pop() method delete value in arrays");
+        let deletedItem = foodItems.pop();
+        console.log(foodItems);
+        console.log("deleted", deletedItem);
+        
+        // 3
+        // Use of [.toString()]
+        // Array ko string bnana ka liya ya method use hota ha
+        // ya method array ka value change nhi krta
+        console.log(foodItems.toString());
+
+        // 4
+        // Use of [.concat()]
+        // ya tow arrays ko join krna ka kam ata ha 
+        // ya array ki value ko change nhi krta
+        // like this 👇
+        let arrayNameOne = ["Muhammad Dilawar", "Muhammad Dawood"];
+        let arrayNameTow = ["Bhai Noman", "Abdul Rehman"];
+        let arrayNameThree = ["DWD"];
+        console.log(arrayNameOne);
+        console.log(arrayNameTow);
+        console.log(arrayNameThree);
+        // let totalArrays = arrayNameOne + arrayNameTow;
+        let totalArrays = arrayNameOne.concat(arrayNameTow, arrayNameThree);
+        console.log(totalArrays);
+        
+        // 5
+        // ya method array ka start ma value add krna ka kam ata ha
+        // like this 👇
+        let addValue = ["Muhammad Dilawar", "Muhammad Dawood"];
+        console.log(addValue);
+        console.log("Add value");
+        addValue.unshift("Bhai Noman");
+        console.log(addValue);
+        
+        // 6
+        // ya pta nhi array ki original value change krta ha ya nhi
+        // ya method array ma sa start wali value delete kar data ha
+        // like this 👇
+        console.log("delete value");
+        addValue.shift();
+        console.log(addValue);
+        
+        
+        // 7
+        // Use of [.slice()]
+        // ya methods original array ka andar change nhi krta
+        // like this 👇
+        console.log("Use of Slice Methods");
+        let useOfSlice = ["Muhammad Dilawar", "Muhammad Dawood", "Abdul Samad", "Ghulam Mustafa"];
+        console.log(useOfSlice);
+        console.log(useOfSlice.length);
+        console.log(useOfSlice.slice(1,4));
+        
+        // 8
+        // Use of [.splice()]
+        // ya method original array ma value change karta han
+        // is array ma three condition hoti han
+        // khan sa start krna, kiya delete krna ha, koi new value add krni ha
+        // like this 👇
+        let arr = [1,2,3,4,5,6,7];
+        console.log(arr);
+        // apply method [.splice()]
+        arr.splice(2,2,101,102);
+        console.log(arr);
+        
+        // only add value in my array
+        arr.splice(2,0,3);
+        console.log(arr);
+        
+        // Delete Element
+        arr.splice(2,1);
+        console.log(arr);
+
+        // Replace Element
+        arr.splice(4,1,100);
+        console.log(arr);
+        
+
+        
+    </script>
+</body>
+</html>

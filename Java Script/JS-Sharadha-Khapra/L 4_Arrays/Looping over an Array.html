@@ -1,0 +1,43 @@
+<!-- Date: 16-Jan-2026 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping over an Array</title>
+</head>
+<body>
+    <p>Looping over an Array</p>
+    <script>
+        console.log("Note: arrays ko template literals ma write krna sa result or kuch ata ha");
+
+        let marks = [84,92,64,88,99,100];
+        // Method one
+        console.log(marks); // all values
+        console.log(marks[0]);  //only 0 position wali value
+        console.log(marks[2]);  //only 2 position wali value
+        console.log(marks[5]);
+
+        // Method two
+        // This is simple loop
+        console.log("This is simple loop");
+        for (let i = 0; i < marks.length; i++){
+            console.log(marks[i]);
+        }
+
+        // arrays ka liya (for of loop use hota han)
+        console.log("This is special loop for arrays");
+        for (let mark of marks){
+            console.log(mark);
+        }
+
+        console.log("One more Example");
+        let cities = ["Jhang", "Lahore", "FSD", "Multan"];
+        for (let city of cities){
+            console.log(city);
+            // All Cities in Upper Case
+            console.log("In upper case:>",city.toUpperCase());
+        }
+        </script>
+</body>
+</html>

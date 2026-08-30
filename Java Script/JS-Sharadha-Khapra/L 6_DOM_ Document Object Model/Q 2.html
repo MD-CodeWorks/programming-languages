@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L -2, Q - 2</title>
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            margin: 5px;
+            text-align: center;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Qs. Create 3 div with common class name - "box". Access them & add some unique text to each of them.</p>
+
+    <h2>Hello Muhammad Dilawar</h2>
+    <div class="box">first div</div>
+    <div class="box">second div</div>
+    <div class="box">third div</div>
+
+    <script>
+        let divs = document.querySelectorAll(".box");
+        console.log(divs);
+        console.log(divs[0]);
+        divs[0].innerText = "Hi I am first div";
+        console.log(divs[1]);
+        divs[1].innerText = "Hi I am second div";
+        console.log(divs[2]);
+        divs[2].innerText = "Hi I am third div";
+    </script>
+</body>
+
+</html>

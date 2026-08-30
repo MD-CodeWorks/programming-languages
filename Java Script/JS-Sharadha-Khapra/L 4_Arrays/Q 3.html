@@ -1,0 +1,36 @@
+<!-- Date: 17-Jan-2026 -->
+<!-- Watch Time: (ma kis time bhata video diak rha) 11:34 -->
+<!-- Video Time: 56:25 -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L - 4, Q - 3</title>
+ </head>
+ <body>
+    <pre>
+        Q3. Create an array to store companies -> "Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"
+
+        a. Remove the first company from the array
+        
+        b. Remove Uber & Add Ola in its place
+
+        c. Add Amazon at the end
+    </pre>
+
+    <script>
+        let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+        console.log(companies);
+        console.log("a. Remove the first company from the array");
+        console.log(companies.shift());
+        console.log(companies);
+        console.log("b. Remove Uber & Add Ola in its place");
+        console.log(companies.splice(1,1,"Ola"));
+        console.log(companies);
+        console.log("c. Add Amazon at the end");
+        console.log(companies.push("Amazon"));
+        console.log(companies);
+    </script>
+ </body>
+ </html>
