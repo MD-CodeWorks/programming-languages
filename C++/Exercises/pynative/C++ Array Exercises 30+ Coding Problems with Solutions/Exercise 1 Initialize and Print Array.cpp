@@ -14,7 +14,7 @@ Date: 2026-08-08 | Time: 17:03
     The elements in the array are: 10 20 30 40 50
 */
 
-// g++ "Exercise 1: Initialize and Print Array.cpp" -o "Exercise 1: Initialize and Print Array" && ./"Exercise 1: Initialize and Print Array"
+// g++ "Exercise 1 Initialize and Print Array.cpp" -o "Exercise 1 Initialize and Print Array" && ./"Exercise 1 Initialize and Print Array"
 #include<iostream>
 using namespace std;
 int main(){
